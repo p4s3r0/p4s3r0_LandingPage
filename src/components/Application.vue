@@ -1,5 +1,5 @@
 <template>
-<img src="fastfood.png"/>
+<img src='./images/memoji_hi.png'/>
 </template>
 
 <style scoped>
