@@ -64,7 +64,7 @@ import Memoji from "./CenterMemoji.vue";
 
 #memoji {
     position: absolute;
-    left: calc(50vw - 100px / 2);
+    left: calc(50vw - 150px / 2);
 }
 </style>
 
