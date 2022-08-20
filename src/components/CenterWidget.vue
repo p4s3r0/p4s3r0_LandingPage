@@ -56,7 +56,9 @@ import Memoji from "./CenterMemoji.vue";
 }
 
 #name {
-    top: 10px;
+    position: relative;
+    margin-top: 10px;
+    margin-bottom: -10px;
     text-align: center;
 }
 

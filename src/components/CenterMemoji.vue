@@ -22,7 +22,7 @@
     background-color: rgba(177, 177, 195, 0.733);
     overflow: hidden;
     border-radius: 50%;
-    top: calc(50px - 5vw);
+    margin-top: calc(50px - 5vw);
     right: 25px;
 }
 
@@ -33,8 +33,8 @@ img {
 
 #pictureContainer {
     position: absolute;
-    top: calc(52px - 5vw);
-    right: 35px;
+    top: calc(53px - 5vw);
+    right: 10px;
 }
 </style>
 

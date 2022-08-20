@@ -59,6 +59,7 @@ export default {
 }
 
 svg {
+    position: relative;
     float: right;
     bottom: 10px;
 }

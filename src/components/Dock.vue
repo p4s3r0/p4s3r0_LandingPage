@@ -27,7 +27,7 @@ import Application from "./Application.vue";
   padding-bottom: 5px;
   padding-right: 5px;
   display: flex;
-  bottom:5px;
+  bottom: 5px;
   left: calc(50vw - (var(--num-apps) * (var(--app-size) + 5px) )/2);/* calc(50vw - (num_applications * 50px)/2) */
   /* BLURRY BACKGROUND*/
   background: rgba(0, 0, 0, 0.4);
