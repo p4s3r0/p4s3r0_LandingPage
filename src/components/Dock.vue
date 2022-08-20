@@ -1,16 +1,21 @@
 
 <script setup>
-import Application from "./Application.vue";
+import ApplicationSpotify from "./ApplicationSpotify.vue";
+import ApplicationGithub from "./ApplicationGithub.vue";
+import ApplicationDiscord from "./ApplicationDiscord.vue";
+import ApplicationLinkedin from "./ApplicationLinkedin.vue";
+import ApplicationCloud from "./ApplicationCloud.vue";
+import ApplicationYoutube from "./ApplicationYoutube.vue";
 </script>
 
 <template>
 <div id="container">
-  <application/>
-  <application/>
-  <application/>
-  <application/>
-  <application/>
-  <application/>
+  <application-spotify/>
+  <application-github/>
+  <application-youtube/>
+  <application-discord/>
+  <application-linkedin/>
+  <application-cloud/>
 </div>
 </template>
 
