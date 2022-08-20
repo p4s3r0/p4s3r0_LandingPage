@@ -7,6 +7,15 @@ import Memoji from "./CenterMemoji.vue";
 <div id="container">
     <p id="name">Christian Pasero</p>
     <div id="line"></div>
+    <a href="//bachelor.p4s3r0.com">
+        <svg width="48px" height="48px" viewBox="0 0 48 48" fill="none">
+            <path d="M4 13L24 8L44 13L24 18L4 13Z"  stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M13 16V25.9706C13 25.9706 18 29 24 29C30 29 35 25.9706 35 25.9706V16" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M7 14V36" stroke-linecap="round" stroke-linejoin="round"/>
+            <rect x="4" y="34" width="6" height="6" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+    </a>
+<p id="svgNameing"> Bsc Thesis</p>
 </div>
 
 <div id="messageBubble">
@@ -16,6 +25,9 @@ import Memoji from "./CenterMemoji.vue";
 <div id="memoji">
     <memoji/>
 </div>
+
+
+
 </template>
 
 <style scoped>
@@ -23,7 +35,7 @@ import Memoji from "./CenterMemoji.vue";
 #container {
     /* CONSTANTS*/
     --container-width: 400px;
-    --container-height: 480px;
+    --container-height: 400px;
     /* CSS */
     position: absolute;
     width: var(--container-width);
@@ -43,7 +55,7 @@ import Memoji from "./CenterMemoji.vue";
 #messageBubble {
     position: relative;
     margin-left: 27vw;
-    margin-top: 21vh;
+    margin-top: 25vh;
 }
 
 #line {
@@ -65,6 +77,30 @@ import Memoji from "./CenterMemoji.vue";
 #memoji {
     position: absolute;
     left: calc(50vw - 150px / 2);
+}
+
+svg {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    border: solid white 1px;
+    border-radius: 17.5px;
+    padding: 5px;
+    stroke: white;
+    stroke-width: 1px;
+    left: calc(400px/2 - 50px/2);
+    bottom: 25px;
+}
+
+svg:hover {
+    cursor: pointer;
+}
+
+#svgNameing {
+    position: absolute;
+    font-size: 0.8em;
+    left: calc(400px/2 - 50px/2 - 6px);
+    bottom: 5px;
 }
 </style>
 
