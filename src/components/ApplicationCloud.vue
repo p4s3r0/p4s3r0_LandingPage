@@ -1,7 +1,7 @@
 <template>
-<a href="//p4s3r0.com/nextcloud">
+<button onclick="window.location.href='//p4s3r0.com/nextcloud'">
 <img src='./images/cloud.png'/>
-</a>
+</button>
 </template>
 
 <style scoped>
@@ -9,7 +9,6 @@
   border-radius: 12px;
   overflow: hidden;
   perspective: 1px;
-  margin-left: 2.5px;
 }
 
 img {
@@ -26,10 +25,14 @@ img {
   cursor: pointer;
 }
 
-a {
-font-size: 0;  
-padding: 0;
+button {
+  font-size: 0;  
+  padding: 0;
+  border: none;
+  margin-left: 5px;
+  background-color: rgba(0,0,0,0);
 }
+
 
 
 </style>

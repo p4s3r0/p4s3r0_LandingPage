@@ -1,7 +1,7 @@
 <template>
-<a href="//youtube.com">
-<img src='./images/youtube.png'/>
-</a>
+<button onclick="window.location.href='//youtube.com'">
+  <img src='./images/youtube.png'/>
+</button>
 </template>
 
 <style scoped>
@@ -9,7 +9,6 @@
   border-radius: 25px;
   overflow: hidden;
   perspective: 1px;
-  margin-left: 2.5px;
 }
 
 img {
@@ -28,9 +27,12 @@ img {
   cursor: pointer;
 }
 
-a {
-font-size: 0;  
-padding: 0;
+button {
+  font-size: 0;  
+  padding: 0;
+  border: none;
+  margin-left: 5px;
+  background-color: rgba(0,0,0,0);
 }
 
 

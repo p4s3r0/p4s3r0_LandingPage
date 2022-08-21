@@ -3,10 +3,18 @@ import MessageBubble from "./MessageBubble.vue";
 import Memoji from "./CenterMemoji.vue";
 </script>
 
+
+
 <template>
 <div id="container">
     <p id="name">Christian Pasero</p>
     <div id="line"></div>
+        <div id="messageBubble">
+    <message-bubble/>
+    </div>
+    <div id="memoji">
+        <memoji/>
+    </div>
     <a href="//bachelor.p4s3r0.com">
         <svg width="48px" height="48px" viewBox="0 0 48 48" fill="none">
             <path d="M4 13L24 8L44 13L24 18L4 13Z"  stroke-linecap="round" stroke-linejoin="round"/>
@@ -15,20 +23,11 @@ import Memoji from "./CenterMemoji.vue";
             <rect x="4" y="34" width="6" height="6" stroke-linecap="round" stroke-linejoin="round"/>
         </svg>
     </a>
-<p id="svgNameing"> Bsc Thesis</p>
+    <p id="svgNameing"> Bsc Thesis</p>
 </div>
-
-<div id="messageBubble">
-    <message-bubble/>
-</div>
-
-<div id="memoji">
-    <memoji/>
-</div>
-
-
-
 </template>
+
+
 
 <style scoped>
 
@@ -53,9 +52,9 @@ import Memoji from "./CenterMemoji.vue";
 }
 
 #messageBubble {
-    position: relative;
-    margin-left: 27vw;
-    margin-top: 25vh;
+    position: absolute;
+    margin-top: 20px;    
+    margin-left: -150px;
 }
 
 #line {
@@ -76,7 +75,8 @@ import Memoji from "./CenterMemoji.vue";
 
 #memoji {
     position: absolute;
-    left: calc(50vw - 150px / 2);
+    left: calc(200px - 150px / 2);
+    top: 100px;
 }
 
 svg {
@@ -101,6 +101,22 @@ svg:hover {
     font-size: 0.8em;
     left: calc(400px/2 - 50px/2 - 6px);
     bottom: 5px;
+}
+
+/* MOBILE VERSION */
+@media only screen and (max-width: 1000px) {
+    #container {
+        position: relative;
+        bottom: 0;
+        top: 50px;
+    }
+    #messageBubble {
+        margin-left: 130px;
+    }
+
+    #memoji {
+        top: 140px;
+    }
 }
 </style>
 

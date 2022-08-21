@@ -6,10 +6,10 @@ import LeftEvents from "./components/LeftEvents.vue"
 </script>
 
 <template>
-    <terminal/>
-    <dock/>
     <center-widget/>
     <left-events/>
+    <terminal/>
+    <dock/>
 </template>
 
 <style scoped>

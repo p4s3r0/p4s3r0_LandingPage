@@ -5,10 +5,11 @@
 <template>
 <p>&nbsp;</p>
 <div id="container">
-</div>
-<div id="pictureContainer">
+    <div id="pictureContainer">
     <img src='./images/memoji_hi.png'>
+    </div>
 </div>
+
 </template>
 
 <style scoped>
@@ -22,7 +23,6 @@
     background-color: rgba(177, 177, 195, 0.733);
     overflow: hidden;
     border-radius: 50%;
-    margin-top: calc(50px - 5vw);
     right: 25px;
 }
 
@@ -33,8 +33,8 @@ img {
 
 #pictureContainer {
     position: absolute;
-    top: calc(53px - 5vw);
     right: 10px;
+    top: 3px;
 }
 </style>
 

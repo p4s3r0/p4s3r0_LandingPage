@@ -1,7 +1,7 @@
 <template>
-<a href="//github.com/p4s3r0">
-<img src='./images/github.png'/>
-</a>
+<button onclick="window.location.href='//github.com/p4s3r0'">
+  <img src='./images/github.png'/>
+</button>
 </template>
 
 <style scoped>
@@ -9,7 +9,6 @@
   border-radius: 25px;
   overflow: hidden;
   perspective: 1px;
-  margin-left: 2.5px;
 }
 
 img {
@@ -26,9 +25,12 @@ img {
   cursor: pointer;
 }
 
-a {
-font-size: 0;  
-padding: 0;
+button {
+  font-size: 0;  
+  padding: 0;
+  border: none;
+  margin-left: 5px;
+  background-color: rgba(0,0,0,0);
 }
 
 

@@ -52,5 +52,29 @@
     position: absolute;
     right: calc(10px + 15vw - 50px); 
 }
+
+/* MOBILE VERSION */
+@media only screen and (max-width: 1000px) {
+    #container {
+        /* CSS */
+        position: relative;
+        left: calc(50vw - 400px/2);
+        width: 400px;
+        top: 100px;
+    }
+
+    #topBar {
+        position: relative;
+        width: 400px;
+        height: 25px;
+        left: calc(50vw - 400px/2);
+        right: auto;
+        top: -200px;
+    }
+    #topBar p {
+        right: 150px;
+}
+
+}
 </style>
 

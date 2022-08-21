@@ -9,7 +9,7 @@ import ApplicationYoutube from "./ApplicationYoutube.vue";
 </script>
 
 <template>
-<div id="container">
+<div id="containerDock">
   <application-spotify/>
   <application-github/>
   <application-youtube/>
@@ -20,7 +20,7 @@ import ApplicationYoutube from "./ApplicationYoutube.vue";
 </template>
 
 <style scoped>
-#container {
+#containerDock {
   /* CONSTANTS*/
   --num-apps: 6;
   --app-size: 50px;
@@ -33,7 +33,7 @@ import ApplicationYoutube from "./ApplicationYoutube.vue";
   padding-right: 5px;
   display: flex;
   bottom: 5px;
-  left: calc(50vw - (var(--num-apps) * (var(--app-size) + 5px) )/2);/* calc(50vw - (num_applications * 50px)/2) */
+  left: calc(50vw - (var(--num-apps) * (var(--app-size) + 5px) )/2);
   /* BLURRY BACKGROUND*/
   background: rgba(0, 0, 0, 0.4);
   border-radius: 16px;
@@ -41,6 +41,15 @@ import ApplicationYoutube from "./ApplicationYoutube.vue";
   backdrop-filter: blur(14.2px);
   -webkit-backdrop-filter: blur(14.2px);
   border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+@media only screen and (max-width: 1000px) {
+    #containerDock {
+        position: relative;
+        bottom: auto;
+        top: 100px;
+        width: calc(var(--num-apps) * var(--app-size) + var(--num-apps) * 5px + 2 * 5px)
+    }
 }
 </style>
 

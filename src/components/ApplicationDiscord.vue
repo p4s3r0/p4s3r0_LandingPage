@@ -1,15 +1,13 @@
 <template>
-<a href="//discordapp.com/users/257140712494202890">
+<button onclick="window.location.href='//discordapp.com/users/257140712494202890'">
 <img src='./images/discord.png'/>
-</a>
+</button>
 </template>
 
 <style scoped>
 * {
   border-radius: 12px;
   overflow: hidden;
-  perspective: 1px;
-  margin-left: 5px;
 }
 
 img {
@@ -27,9 +25,13 @@ img {
   cursor: pointer;
 }
 
-a {
-font-size: 0;  
-padding: 0;
+button {
+  font-size: 0;  
+  padding: 0;
+  border: none;
+  margin-left: 5px;
+  margin-top: 0px;
+  background-color: rgba(0,0,0,0);
 }
 
 

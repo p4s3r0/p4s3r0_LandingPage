@@ -1,7 +1,7 @@
 <template>
-<a href="//open.spotify.com/user/chri.pasero?si=8dc08ab60bb8480b">
+<button onclick="window.location.href='//open.spotify.com/user/chri.pasero?si=8dc08ab60bb8480b'">
 <img src='./images/spotify.png'/>
-</a>
+</button>
 </template>
 
 <style scoped>
@@ -9,7 +9,6 @@
   border-radius: 25px;
   overflow: hidden;
   perspective: 1px;
-  margin-left: 5px;
 }
 
 img {
@@ -26,9 +25,12 @@ img {
   cursor: pointer;
 }
 
-a {
-font-size: 0;  
-padding: 0;
+button {
+  font-size: 0;  
+  padding: 0;
+  border: none;
+  margin-left: 5px;
+  background-color: rgba(0,0,0,0);
 }
 
 

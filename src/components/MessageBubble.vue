@@ -22,7 +22,7 @@ export default {
 </script>
 
 <template>
-<p id="textMessage"> Hi stranger 🤓 welcome to my<br> servers landing page! </p>
+<p id="textMessage"> Hi stranger 🤓 I'm an enthusiastic <br> Computer Science Student <br> interested in Security! 🖥 </p>
 <svg width="12" height="19" viewBox="0 0 23 19" fill="none" xmlns="http://www.w3.org/2000/svg">
     <path d="M22.783 18.2906C11.4878 20.3442 2.88798 14.4399 0 11.231L0.320887 1.60444C3.4228 2.24621 10.14 2.82381 12.1937 0C11.8728 11.5519 20.5368 17.3279 22.783 18.2906Z" fill="#468CF7"/>
 </svg>

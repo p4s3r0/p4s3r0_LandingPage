@@ -55,5 +55,19 @@ import Event from "./Event.vue"
     border-radius: 6px;
 }
 
+
+/* MOBILE VERSION */
+@media only screen and (max-width: 1000px) {
+#containerEvents {
+    /* CSS */
+    position: relative;
+    left: calc(50vw - 300px/2);
+    width: 320px;
+    top: 80px;
+}
+}
+
+
+
 </style>
 
