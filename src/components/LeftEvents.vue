@@ -61,7 +61,7 @@ import Event from "./Event.vue"
 #containerEvents {
     /* CSS */
     position: relative;
-    left: calc(50vw - 300px/2);
+    left: calc(50vw - 330px/2);
     width: 320px;
     top: 80px;
 }

@@ -46,9 +46,9 @@ import ApplicationYoutube from "./ApplicationYoutube.vue";
 @media only screen and (max-width: 1000px) {
     #containerDock {
         position: relative;
-        bottom: auto;
+        bottom: 10px;
         top: 100px;
-        width: calc(var(--num-apps) * var(--app-size) + var(--num-apps) * 5px + 2 * 5px)
+        width: calc(var(--num-apps) * var(--app-size) + var(--num-apps) * 5px + 2 * 5px);
     }
 }
 </style>

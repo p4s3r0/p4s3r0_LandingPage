@@ -54,6 +54,7 @@ h2 {
 
 h3 {
     position: relative;
+    width: 200px;
     top: -38px;
     left: 92px;
     font-size: 1em;
@@ -65,6 +66,7 @@ p {
     left: 70px;
     top: -40px;
     font-weight: 500;
+    width: 200px;
 }
 
 svg {

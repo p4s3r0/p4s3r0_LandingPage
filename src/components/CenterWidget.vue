@@ -117,6 +117,10 @@ svg:hover {
     #memoji {
         top: 140px;
     }
+    #name {
+        top: 10px;
+        margin-bottom: 5px;
+    }
 }
 </style>
 
