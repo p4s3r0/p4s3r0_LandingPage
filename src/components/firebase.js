@@ -28,7 +28,7 @@ let eventListUnfiltered = await getEvents(db);
 
 eventListUnfiltered.forEach(element => {
     element["sortValue"] = element["year"] * 10000 + element["month"] * 100 + element["day"];
-    element["month"] = months[element["month"]]
+    element["month"] = months[element["month"] - 1]
 });
 
 eventListUnfiltered.sort(function(a, b) {
