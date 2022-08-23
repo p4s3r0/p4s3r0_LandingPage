@@ -1,8 +1,4 @@
-<script setup>
-import Event from "./Event.vue"
-</script>
-
-<template>
+<template #fallback>
 
 <div id="containerEvents">
     <div id="topBar">
@@ -11,11 +7,49 @@ import Event from "./Event.vue"
         <div class="actionButton" style="background-color: #38C149;"> </div>
         <p>Events</p>
     </div>
-    <event month="AUG" day="24" time="ALL DAY" event="KTE 💁🏻‍♀️ Urlaub buchen "/>
-    <event month="AUG" day="28" time="ALL DAY" event="Ina Geburtstag 🥳"/>
+    <event v-for="event in eventList" 
+                :key="event.id" 
+                :month="event.month" 
+                :day="event.day" 
+                :time="event.time" 
+                :event="event.description" />
 </div>
 
 </template>
+
+<script setup>
+import Event from "./Event.vue"
+import { initializeApp } from 'firebase/app';
+import { getFirestore, collection, getDocs } from 'firebase/firestore';
+
+
+const firebaseConfig = {
+    apiKey: "AIzaSyAYgohUcOtGwgtDhdXlec99BJQ92rveJhk",
+    authDomain: "landingpage-d70d6.firebaseapp.com",
+    projectId: "landingpage-d70d6",
+    storageBucket: "landingpage-d70d6.appspot.com",
+    messagingSenderId: "356778437957",
+    appId: "1:356778437957:web:6fb2e70693bc256952622c",
+    measurementId: "G-F39TDMTB7G"
+};
+
+const appFire = initializeApp(firebaseConfig);
+const db = getFirestore(appFire);
+
+async function getEvents(db) {
+    const citiesCol = collection(db, 'events');
+    const citySnapshot = await getDocs(citiesCol);
+    const cityList = citySnapshot.docs.map(doc => doc.data());
+    return cityList;
+}
+
+
+let eventList = await getEvents(db);
+</script>
+
+
+
+
 
 <style scoped>
 #containerEvents {
