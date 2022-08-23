@@ -43,8 +43,20 @@ async function getEvents(db) {
     return cityList;
 }
 
+let months = ["JAN", "FEB", "MAR", "APR", "MAY", "JUN", "JUL", "AUG", "SEP", "OCT", "NOV", "DEC"];
+let eventListUnfiltered = await getEvents(db);
 
-let eventList = await getEvents(db);
+eventListUnfiltered.forEach( element => {
+    element["sortValue"] = element["year"]*10000 + element["month"]*100 + element["day"];
+    element["month"] = months[element["month"]]
+})
+eventListUnfiltered.sort(function(a,b) {
+    return b.sortValue - a.sortValue
+});
+
+let eventList = eventListUnfiltered.reverse()
+
+console.log(eventList)
 </script>
 
 
