@@ -12,6 +12,7 @@
     </svg>
     <h3> {{ time }} </h3>
     <p> {{ event }} </p>
+    <button @click="deleteFromDatabase">DEL</button>
 </div>
 </template>
 
@@ -75,10 +76,33 @@ svg {
     margin-left: 70px;
     top: -12px;
 }
+
+button {
+    position: relative;
+    top: -80px;
+    left: 305px;
+    height: 40px;
+    width: 40px;
+    background-color: rgb(233, 73, 73);
+    border: none;
+    border-radius: 10px;
+}
 </style>
 
 <script>
+import {deleteFromFirebase, db} from './firebase.js'
+
 export default {
- props: ['month', 'day', 'time', 'event']
+    props: ['month', 'day', 'time', 'event', 'eventID'],
+    methods: {
+        deleteFromDatabase() {
+            deleteFromFirebase(db, this.eventID)
+            setTimeout(function(){
+                window.location.reload(1);
+            }, 1000);
+            },
+    },
 }
+
+
 </script>
