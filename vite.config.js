@@ -14,4 +14,7 @@ export default defineConfig({
                 import.meta.url)),
         },
     },
+    build: {
+        target: 'esnext'
+    },
 });
