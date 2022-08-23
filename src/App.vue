@@ -7,11 +7,9 @@ import LeftEvents from "./components/LeftEvents.vue"
 
 <template>
     <center-widget/>
-<Suspense>
-
-    <left-events/>
-</Suspense>
-
+    <Suspense>
+        <left-events/>
+    </Suspense>
     <terminal/>
     <dock/>
 </template>
