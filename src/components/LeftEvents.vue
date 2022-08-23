@@ -11,7 +11,6 @@ import Event from "./Event.vue"
         <div class="actionButton" style="background-color: #38C149;"> </div>
         <p>Events</p>
     </div>
-    <event month="AUG" day="22" time="19:00 - 20:00" event="Tennis mit Papa 🎾"/>
     <event month="AUG" day="24" time="ALL DAY" event="KTE 💁🏻‍♀️ Urlaub buchen "/>
     <event month="AUG" day="28" time="ALL DAY" event="Ina Geburtstag 🥳"/>
 </div>
