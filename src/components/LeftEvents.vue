@@ -4,7 +4,7 @@
     <div id="topBar">
         <div class="actionButton" style="background-color: #FF5E57;"> </div>
         <div class="actionButton" style="background-color: #FFBB2E;"> </div>
-        <div class="actionButton" style="background-color: #38C149;"> </div>
+        <div @click="reloadPage" class="actionButton" style="background-color: #38C149;"> </div>
         <p>Events</p>
     </div>
     <event v-for="event in eventList" 
@@ -20,6 +20,10 @@
 <script setup>
 import Event from "./Event.vue"
 import { eventList } from './firebase.js'
+
+function reloadPage() {
+    window.location.reload();
+}
 </script>
 
 
