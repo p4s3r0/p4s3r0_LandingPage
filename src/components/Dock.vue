@@ -49,6 +49,7 @@ import ApplicationYoutube from "./ApplicationYoutube.vue";
         bottom: 10px;
         top: 100px;
         width: calc(var(--num-apps) * var(--app-size) + var(--num-apps) * 5px + 2 * 5px);
+        margin-bottom: 150px;
     }
 }
 </style>
