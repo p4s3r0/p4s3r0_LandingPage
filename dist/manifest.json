@@ -1,0 +1,14 @@
+{
+    "name": "landing_page",
+    "short_name": "landing_page",
+    "start_url": "/",
+    "display": "standalone",
+    "background_color": "#ffffff",
+    "lang": "en",
+    "scope": "/",
+    "icons": [{
+        "src": "/img/ios24x24.png",
+        "type": "image/png",
+        "sizes": "24x24"
+    }]
+}
