@@ -15,7 +15,7 @@ import Memoji from "./CenterMemoji.vue";
     <div id="memoji">
         <memoji/>
     </div>
-    <a href="thesis.pdf" download="Bachelor_Thesis_PaseroChristian.pdf">
+    <a href="https://docs.google.com/viewer?url=https://p4s3r0.com/bac/thesis_final.pdf">
         <svg width="48px" height="48px" viewBox="0 0 48 48" fill="none">
             <path d="M4 13L24 8L44 13L24 18L4 13Z"  stroke-linecap="round" stroke-linejoin="round"/>
             <path d="M13 16V25.9706C13 25.9706 18 29 24 29C30 29 35 25.9706 35 25.9706V16" stroke-linecap="round" stroke-linejoin="round"/>
